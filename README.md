@@ -1,66 +1,84 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Klasemen Sepak Bola
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+    <img src="url/to/your/image" alt="Football Standings Logo" width="300"/>
 </p>
 
-## About Laravel
+<p align="center">Deskripsi singkat tentang proyek klasemen sepak bola Anda.</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Daftar Isi
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- [Tentang Proyek](#tentang-proyek)
+- [Cara Menggunakan](#cara-menggunakan)
+- [Kontribusi](#kontribusi)
+- [Lisensi](#lisensi)
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Tentang Proyek
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Proyek ini bertujuan untuk menyajikan klasemen sepak bola dengan tampilan yang bersih dan informatif. Dengan menggunakan proyek ini, pengguna dapat melihat klasemen, skor pertandingan, dan informasi terkait tim sepak bola.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Cara Menggunakan
 
-## Laravel Sponsors
+Berikut adalah langkah-langkah untuk menggunakan proyek ini:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+1. **Instalasi Dependencies**
+    - Pastikan Anda telah menginstal PHP, Laravel, dan MySQL di komputer Anda.
+    - Clone repositori ini ke komputer Anda.
 
-### Premium Partners
+    ```bash
+    git clone https://github.com/Rian-P/klasemensepakbola.git
+    ```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+    - Masuk ke direktori proyek.
 
-## Contributing
+    ```bash
+    cd klasemensepakbola
+    ```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+    - Instal semua dependencies menggunakan Composer.
 
-## Code of Conduct
+    ```bash
+    composer install
+    ```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+    - Salin file `.env.example` ke `.env` dan sesuaikan konfigurasi database.
 
-## Security Vulnerabilities
+    ```bash
+    cp .env.example .env
+    ```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+    - Generate key aplikasi.
 
-## License
+    ```bash
+    php artisan key:generate
+    ```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+    - Migrasi dan seeding database.
+
+    ```bash
+    php artisan migrate --seed
+    ```
+
+2. **Jalankan Aplikasi**
+
+    - Jalankan server Laravel.
+
+    ```bash
+    php artisan serve
+    ```
+
+    - Buka browser dan akses `http://localhost:8000` untuk melihat aplikasi klasemen sepak bola.
+
+## Kontribusi
+
+Jika Anda ingin berkontribusi pada proyek ini, silakan buat _fork_ dari repositori ini, lakukan perubahan yang diinginkan, dan buat _pull request_.
+
+## Lisensi
+
+Proyek ini dilisensikan di bawah [lisensi MIT](LICENSE).
+
+
